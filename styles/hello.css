@@ -1,0 +1,22 @@
+#hello_container {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  background-color: #d3d3d3;
+}
+#hello_svg {
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  max-width: 640px;
+  max-height: 227px;
+}
+#hello_svg path {
+  stroke-dasharray: 2400;
+}
