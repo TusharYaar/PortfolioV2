@@ -1,3 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
 body {
-  background-color: #d3d3d3d3;
+  background: url("../assests/background.png");
+  background-size: contain;
+  background-repeat: repeat;
+  height: 400vh;
+  background-color: #1d1d1d;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  scrollbar-width: thin;
+}
+
+.site_section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+#name_section {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#name_text {
+  font-size: 70px;
+  font-family: "Noto Serif", serif;
+  color: #fff;
+  letter-spacing: -4px;
+}
+
+.name_section_letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+@media (min-width: 768px) {
+  .site_section {
+    padding: 40px;
+  }
+  #name_text {
+    font-size: 256px;
+    letter-spacing: -10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .site_section {
+    padding: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #name_text {
+    font-size: 200px;
+  }
 }
