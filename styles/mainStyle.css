@@ -63,9 +63,26 @@ body {
 
 #sidebar {
   position: fixed;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   top: 0;
   right: 0;
   width: 0px;
   background-color: #141414;
   height: 100vh;
+}
+
+#social_icon_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#social_icon_container > .social_icon {
+  font-size: 30px;
+  color: #1e4685;
+  margin: 10px 0px 10px 0px;
+  text-decoration: none;
 }

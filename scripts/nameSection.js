@@ -14,3 +14,12 @@ initial_timeline.add({
   easing: "easeOutExpo",
   duration: 1000,
 });
+initial_timeline.add({
+  targets: ".social_icon",
+  translateY: [-300, 0],
+  duration: 500,
+  delay: (el, i) => 300 * i,
+  easing: "easeOutExpo",
+  direction: "normal",
+  loop: 0,
+});
