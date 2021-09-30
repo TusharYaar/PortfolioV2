@@ -1,6 +1,5 @@
-var loading_timeline = anime.timeline();
 var updates = 0;
-loading_timeline.add({
+initial_timeline.add({
   targets: "#hello_svg >  path",
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: "easeInOutSine",
@@ -8,7 +7,7 @@ loading_timeline.add({
   direction: "alternate",
   loop: 0,
 });
-loading_timeline.add({
+initial_timeline.add({
   targets: "#hello_container",
   opacity: "0",
   easing: "easeInOutSine",

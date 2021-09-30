@@ -30,8 +30,8 @@ body {
 #name_text {
   font-size: 70px;
   font-family: "Noto Serif", serif;
-  color: #fff;
-  letter-spacing: -4px;
+  color: #1e4685;
+  /* letter-spacing: -4px; */
 }
 
 .name_section_letter {
@@ -45,7 +45,7 @@ body {
   }
   #name_text {
     font-size: 256px;
-    letter-spacing: -10px;
+    letter-spacing: -8px;
   }
 }
 
@@ -59,4 +59,13 @@ body {
   #name_text {
     font-size: 200px;
   }
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0px;
+  background-color: #141414;
+  height: 100vh;
 }
