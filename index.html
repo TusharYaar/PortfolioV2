@@ -15,7 +15,6 @@
   <body id="body">
     <div id="hello_container">
       <!-- welcome container which loads first -->
-
       <svg
         id="hello_svg"
         xmlns="http://www.w3.org/2000/svg"
@@ -61,8 +60,7 @@
       <section id="name_section" class="site_section">
         <h1 id="name_text">
           <span class="name_section_letter">I</span
-          ><span class="name_section_letter">'</span
-          ><span class="name_section_letter">m</span><br />
+          ><span class="name_section_letter">'m</span><br />
           <span class="name_section_letter">T</span
           ><span class="name_section_letter">u</span
           ><span class="name_section_letter">s</span
@@ -72,13 +70,20 @@
         </h1>
       </section>
     </main>
-
+    <div id="music_notes_container"></div>
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.core.min.js"
+      integrity="sha512-+wqa4/aOL4vwhL637A4p+6epqhUHDqpEfYJa1+PlzlMf908CSOb3xtIeKwZWh5Q0Q/R2nYUKxH4vvcQg+k8KKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script type="text/javascript" src="./scripts/constants.js"></script>
     <script src="./scripts/hello.js"></script>
+    <script src="./scripts/addNotes.js"></script>
     <script src="./scripts/nameSection.js"></script>
   </body>
 </html>

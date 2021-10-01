@@ -30,13 +30,18 @@ body {
 #name_text {
   font-size: 70px;
   font-family: "Noto Serif", serif;
-  color: #1e4685;
+  color: #0077b6;
   /* letter-spacing: -4px; */
 }
 
 .name_section_letter {
   display: inline-block;
   line-height: 1em;
+  transition-duration: 0.1s;
+}
+.name_section_letter:hover {
+  transform: translateY(-20px) !important;
+  color: #d3d3d3;
 }
 
 @media (min-width: 768px) {
@@ -85,4 +90,10 @@ body {
   color: #1e4685;
   margin: 10px 0px 10px 0px;
   text-decoration: none;
+}
+
+.feather-music {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
 }
