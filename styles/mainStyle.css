@@ -36,7 +36,6 @@ body {
 
 .name_section_letter {
   display: inline-block;
-  line-height: 1em;
   transition-duration: 0.1s;
 }
 .name_section_letter:hover {
@@ -78,6 +77,7 @@ body {
   width: 0px;
   background-color: #141414;
   height: 100vh;
+  z-index: 400;
 }
 
 #social_icon_container {

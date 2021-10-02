@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./styles/defaultStyle.css" />
     <link rel="stylesheet" href="./styles/mainStyle.css" />
     <link rel="stylesheet" href="./styles/hello.css" />
+    <link rel="stylesheet" href="./styles/aboutStyle.css" />
+    <link rel="stylesheet" href="./styles/skillStyle.css" />
   </head>
   <body id="body">
     <div id="hello_container">
@@ -73,8 +75,39 @@
           ><span class="name_section_letter">r</span>
         </h1>
       </section>
+      <section id="about_section">
+        <div id="about_text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae
+          quasi veritatis, perspiciatis, sapiente, autem commodi quidem cum
+          debitis vel perferendis quibusdam? Dolor praesentium mollitia debitis
+          ipsam necessitatibus at voluptatem saepe, repellat reprehenderit
+          nostrum ullam natus, eveniet dicta delectus quae quasi, quod atque
+          cumque. Accusamus, dolores praesentium? Consequuntur totam pariatur a
+          exercitationem sed nostrum explicabo eaque, obcaecati labore eligendi
+          ipsa, aliquid impedit porro facilis adipisci? Natus praesentium,
+          vitae, a, est aliquam atque odit commodi laudantium deserunt provident
+          officiis. Accusantium quas, molestiae vero, non maxime tenetur itaque
+          quaerat perspiciatis magnam animi quibusdam quis dolorem, recusandae
+          iste deserunt adipisci consequuntur nihil iusto optio.
+        </div>
+        <div id="photo_container">
+          <img src="./assests/my_transparent.png" id="photo" />
+          <svg
+            id="photo_blob"
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#FF0066"
+              d="M34.1,-47.4C44.6,-39.3,53.8,-29.9,55.2,-19.4C56.7,-8.8,50.6,2.8,43,10.2C35.4,17.6,26.5,20.9,19.1,34.4C11.7,47.8,5.8,71.6,-6.2,80.2C-18.3,88.8,-36.6,82.1,-44,68.7C-51.5,55.2,-48.1,34.9,-48.3,19.3C-48.5,3.7,-52.1,-7.2,-52.6,-20.6C-53.1,-33.9,-50.3,-49.7,-41,-58.2C-31.7,-66.7,-15.9,-67.9,-2,-65.1C11.8,-62.3,23.6,-55.5,34.1,-47.4Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </div>
+      </section>
       <section id="skills_section">
-        <div></div>
+        <div id="skills_strip_1" class="skills_strip"></div>
+        <div id="skills_strip_2" class="skills_strip"></div>
       </section>
     </main>
     <div id="music_notes_container"></div>
@@ -92,5 +125,6 @@
     <script src="./scripts/hello.js"></script>
     <script src="./scripts/addNotes.js"></script>
     <script src="./scripts/nameSection.js"></script>
+    <script src="./scripts/photoBlob.js"></script>
   </body>
 </html>
