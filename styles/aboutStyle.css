@@ -1,13 +1,16 @@
 #about_section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 #about_text {
   width: 70%;
   max-width: 600px;
+  font-size: 30px;
+  color: #efefef;
 }
+
 #photo {
   position: absolute;
   width: 100%;

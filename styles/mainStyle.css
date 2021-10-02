@@ -38,17 +38,25 @@ body {
   display: inline-block;
   transition-duration: 0.1s;
 }
-.name_section_letter:hover {
-  transform: translateY(-20px) !important;
-  color: #d3d3d3;
+.name_section_letter.transition:hover {
+  color: #e63946;
 }
 
+.name_section_letter.transition.play_audio:hover {
+  transform: translateY(-20px) !important;
+  color: #fff;
+}
+@media (min-width: 540px) {
+  #name_text {
+    font-size: 100px;
+  }
+}
 @media (min-width: 768px) {
   .site_section {
     padding: 40px;
   }
   #name_text {
-    font-size: 256px;
+    font-size: 180px;
     letter-spacing: -8px;
   }
 }
@@ -59,9 +67,9 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   #name_text {
-    font-size: 200px;
+    font-size: 256px;
   }
 }
 
@@ -91,7 +99,13 @@ body {
   margin: 10px 0px 10px 0px;
   text-decoration: none;
 }
-
+#social_icon_container > .social_icon.transition {
+  transition: all 0.4s;
+}
+#social_icon_container > .social_icon.transition:hover {
+  transform: rotate(360deg);
+  color: #fff;
+}
 .feather-music {
   position: fixed;
   left: 0px;
@@ -102,4 +116,5 @@ body {
   padding: 10px 0px 10px 0px;
   font-size: 30px;
   color: #0077b6;
+  cursor: pointer;
 }

@@ -6,11 +6,13 @@ initial_timeline.add({
   easing: "easeOutExpo",
   duration: 1400,
   delay: (el, i) => 500 + 30 * i,
+
+  complete: addNoteListener,
 });
 
 initial_timeline.add({
   targets: "#sidebar",
-  width: 90,
+  width: document.body.clientWidth < 510 ? 60 : 90,
   easing: "easeOutExpo",
   duration: 1000,
 });
@@ -22,4 +24,11 @@ initial_timeline.add({
   easing: "easeOutExpo",
   direction: "normal",
   loop: 0,
+  complete: () => {
+    document.querySelectorAll(".social_icon").forEach((el) => {
+      el.classList.add("transition");
+    });
+  },
 });
+
+console.log(document.body.clientWidth);
