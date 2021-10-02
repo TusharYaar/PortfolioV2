@@ -1,11 +1,12 @@
 document.querySelectorAll(".name_section_letter").forEach((element, index) => {
   element.addEventListener("mouseenter", () => {
-    all_howls[index].play();
-    console.log(all_howls[index]);
-    appendNoteAnimation();
-    appendNoteAnimation();
-    if (randomInt(0, 2) == 1) {
+    if (play_audio) {
+      all_howls[index].play();
       appendNoteAnimation();
+      appendNoteAnimation();
+      if (randomInt(0, 2) == 1) {
+        appendNoteAnimation();
+      }
     }
   });
 });
@@ -35,3 +36,20 @@ const appendNoteAnimation = () => {
     },
   });
 };
+
+document.getElementById("play_pause_notes").addEventListener("click", (e) => {
+  play_audio = !play_audio;
+  anime({
+    targets: document.getElementById("play_pause_notes"),
+    rotate: play_audio ? [0, 720] : [720, 0],
+    duration: 500,
+    easing: "easeInOutQuad",
+    update: function (anim) {
+      if (anim.progress > 70) {
+        document.getElementById("play_pause_notes").innerHTML = `<i class=" ${
+          play_audio ? "feather-stop-circle" : "feather-play-circle"
+        }"></i>`;
+      }
+    },
+  });
+});

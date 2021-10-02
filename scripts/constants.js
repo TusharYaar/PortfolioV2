@@ -1,5 +1,7 @@
 document.body.scrollTop = 0; // For Safari
 document.documentElement.scrollTop = 0;
+
+var play_audio = true;
 var initial_timeline = anime.timeline();
 all_howls = [
   new Howl({

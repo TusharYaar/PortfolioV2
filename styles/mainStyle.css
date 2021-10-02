@@ -87,7 +87,7 @@ body {
 }
 #social_icon_container > .social_icon {
   font-size: 30px;
-  color: #1e4685;
+  color: #0077b6;
   margin: 10px 0px 10px 0px;
   text-decoration: none;
 }
@@ -96,4 +96,10 @@ body {
   position: fixed;
   left: 0px;
   bottom: 0px;
+}
+
+#play_pause_notes {
+  padding: 10px 0px 10px 0px;
+  font-size: 30px;
+  color: #0077b6;
 }
