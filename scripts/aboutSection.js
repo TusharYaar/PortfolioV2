@@ -1,9 +1,10 @@
 about_section_timeline.add({
   targets: "#about_text_container > div",
   width: ["0%", "100%"],
+  duration: 700,
   easing: "easeInOutQuad",
   delay: function (el, i) {
-    return i * 150;
+    return i * 100;
   },
 });
 about_section_timeline.add({
@@ -16,10 +17,12 @@ about_section_timeline.add({
 about_section_timeline.add({
   targets: "#about_text_container > div",
   width: ["100%", "0%"],
+  duration: 700,
+
   left: "100%",
   easing: "easeInOutQuad",
   delay: function (el, i) {
-    return i * 150;
+    return i * 100;
   },
 });
 
