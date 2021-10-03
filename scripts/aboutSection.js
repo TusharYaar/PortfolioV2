@@ -2,8 +2,8 @@ about_section_timeline.add({
   targets: "#about_text_container > div",
   width: ["0%", "100%"],
   easing: "easeInOutQuad",
-  delay: function (el, i, l) {
-    return i * 100;
+  delay: function (el, i) {
+    return i * 150;
   },
 });
 about_section_timeline.add({
@@ -18,8 +18,8 @@ about_section_timeline.add({
   width: ["100%", "0%"],
   left: "100%",
   easing: "easeInOutQuad",
-  delay: function (el, i, l) {
-    return i * 100;
+  delay: function (el, i) {
+    return i * 150;
   },
 });
 
@@ -30,7 +30,7 @@ const scrollObserver = new IntersectionObserver(
       about_section_timeline.play();
     }
   },
-  { threshold: [0.4] }
+  { threshold: [0.7] }
 );
 
 scrollObserver.observe(document.getElementById("about_text_container"));
