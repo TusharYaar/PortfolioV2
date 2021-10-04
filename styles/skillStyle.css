@@ -49,6 +49,11 @@
     padding: 20px;
   }
 }
+@media (min-width: 925px) {
+  #all_skills {
+    margin-bottom: 200px;
+  }
+}
 
 .skill_container {
   width: 80%;

@@ -1,0 +1,151 @@
+#contact_section {
+  padding: 20px;
+  padding-right: 60px;
+  position: relative;
+  background-color: #000000;
+}
+@media (min-width: 450px) {
+  #contact_section {
+    padding: 60px;
+  }
+}
+@media (min-width: 510px) {
+  #contact_section {
+    padding: 90px;
+  }
+}
+
+#contact_transition_wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  /* background-color: #000000; */
+}
+#contact_container {
+  margin-top: 100px;
+  color: #efefef;
+  z-index: 5;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media (min-width: 774px) {
+  #contact_container {
+    align-items: center;
+    flex-direction: row;
+    /* margin-top: 200px; */
+  }
+}
+@media (min-width: 992px) {
+  #contact_container {
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1060px) {
+  #contact_container {
+    margin-top: 200px;
+  }
+}
+
+#contact_section_heading {
+  width: 20%;
+}
+
+#contact_section_heading > h2 {
+  font-size: 36px;
+}
+#contact_section_body {
+  width: 100%;
+  line-height: 1.6;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+#contact_section_body > input {
+  font-size: 12px;
+  margin: 0px 5px;
+  color: #898989;
+  padding: 5px;
+  background-color: #000000;
+  border: 0px;
+  border-bottom: 1px solid #efefef;
+  transition: all 0.1s ease-in-out;
+}
+#contact_section_body > input:hover {
+  cursor: pointer;
+}
+#contact_section_body > input:focus {
+  transform: scale(1.1) translateX(5px);
+  background-color: #555555ad;
+  color: #efefef;
+}
+#contact_section_body > input:focus::placeholder {
+  color: transparent;
+}
+@media (min-width: 450px) {
+  #skills_section {
+    padding: 60px;
+  }
+  #contact_section_heading > h2 {
+    font-size: 48px;
+  }
+  #contact_section_body {
+    font-size: 24px;
+  }
+  #contact_section_body > input {
+    font-size: 16px;
+  }
+}
+#contact_section_body > input#name,
+#contact_section_body > input#job {
+  width: 50%;
+}
+#contact_section_body > input#email {
+  width: 70%;
+}
+
+@media (min-width: 774px) {
+  #contact_section_heading {
+    width: 20%;
+  }
+  #contact_section_body {
+    width: 60%;
+  }
+}
+@media (min-width: 1324px) {
+  #contact_section_heading > h2 {
+    font-size: 60px;
+  }
+  #contact_section_body {
+    width: 60%;
+    font-size: 36px;
+    line-height: 1.6;
+  }
+  #contact_section_body > input {
+    font-size: 20px;
+  }
+}
+
+#send_form {
+  font-size: 16px;
+  color: #efefef;
+  background-color: transparent;
+  display: block;
+  margin-top: 50px;
+  border: none;
+  padding: 20px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+#send_form:hover {
+  transform: translateY(-5px);
+}
+#send_form:active {
+  transform: translateY(5px);
+}

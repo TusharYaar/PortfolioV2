@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/aboutStyle.css" />
     <link rel="stylesheet" href="./styles/skillStyle.css" />
     <link rel="stylesheet" href="./styles/projectSection.css" />
+    <link rel="stylesheet" href="./styles/contactStyle.css" />
   </head>
   <body id="body">
     <div id="hello_container">
@@ -206,6 +207,40 @@
         </svg>
       </section>
       <section id="project_section"></section>
+      <section id="contact_section">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          id="contact_transition_wave"
+        >
+          <path
+            fill="#0077b6"
+            fill-opacity="1"
+            d="M0,64L30,69.3C60,75,120,85,180,106.7C240,128,300,160,360,160C420,160,480,128,540,133.3C600,139,660,181,720,181.3C780,181,840,139,900,101.3C960,64,1020,32,1080,26.7C1140,21,1200,43,1260,69.3C1320,96,1380,128,1410,144L1440,160L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
+          ></path>
+        </svg>
+
+        <div id="contact_container">
+          <div id="contact_section_heading">
+            <h2>
+              Let's&nbsp;get <br />
+              started.
+            </h2>
+          </div>
+          <div id="contact_section_body">
+            My name is
+            <input id="name" type="text" placeholder="YOUR FULL NAME" /> and i
+            have a
+            <input id="job" type="text" placeholder="WEBSITE, JOB, ETC." /> that
+            could use your help. You can reach me at
+            <input id="email" type="email" placeholder="YOUR EMAIL ADDRESS" />
+            to get things started.
+            <button id="send_form">
+              Send Form <i class="feather-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <div id="music_notes_container"></div>
     <script
@@ -227,5 +262,6 @@
     <script src="./scripts/playMusic.js"></script>
     <script src="./scripts/skillsSection.js"></script>
     <script src="./scripts/projectSection.js"></script>
+    <script src="./scripts/contactSection.js"></script>
   </body>
 </html>

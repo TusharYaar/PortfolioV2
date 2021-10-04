@@ -4,7 +4,6 @@ body {
   background: url("../assests/background.png");
   background-size: contain;
   background-repeat: repeat;
-  height: 400vh;
   background-color: #1d1d1d;
   font-family: "Roboto", sans-serif;
   overflow: hidden;
