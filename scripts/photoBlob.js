@@ -7,3 +7,12 @@ anime({
   loop: true,
   direction: "alternate",
 });
+
+anime({
+  targets: "#skills_transition_wave > path",
+  d: [wave3, wave2, wave1, wave4, wave6, wave5],
+  easing: "easeInOutQuad",
+  duration: 16000,
+  loop: true,
+  direction: "alternate",
+});
