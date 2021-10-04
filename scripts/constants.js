@@ -5,6 +5,8 @@ var play_audio = true;
 var initial_timeline = anime.timeline();
 var about_section_timeline = anime.timeline({ autoplay: false });
 var about_section_timeline_play = false;
+var skills_section_timeline = anime.timeline({ autoplay: false });
+var skills_section_timeline_play = false;
 all_howls = [
   new Howl({
     src: ["./assests/sounds/C3.mp3"],

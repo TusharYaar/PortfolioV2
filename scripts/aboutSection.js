@@ -18,7 +18,6 @@ about_section_timeline.add({
   targets: "#about_text_container > div",
   width: ["100%", "0%"],
   duration: 700,
-
   left: "100%",
   easing: "easeInOutQuad",
   delay: function (el, i) {
@@ -26,7 +25,7 @@ about_section_timeline.add({
   },
 });
 
-const scrollObserver = new IntersectionObserver(
+const aboutSectionObserver = new IntersectionObserver(
   function (entries) {
     if (entries[0].isIntersecting === true && !about_section_timeline_play) {
       about_section_timeline_play = true;
@@ -36,4 +35,4 @@ const scrollObserver = new IntersectionObserver(
   { threshold: [0.7] }
 );
 
-scrollObserver.observe(document.getElementById("about_text_container"));
+aboutSectionObserver.observe(document.getElementById("about_text_container"));
