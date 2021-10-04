@@ -65,6 +65,9 @@
   font-weight: bold;
   font-size: 24px;
   color: #efefef;
+  position: relative;
+  display: inline-block;
+  margin: 5px 0px;
 }
 
 .skill_body {
@@ -141,13 +144,6 @@
   }
 }
 .skill_body > p {
-  margin: 5px 0px;
-}
-
-.skill_heading {
-  position: relative;
-  padding: 0px 10px;
-  display: inline-block;
   margin: 5px 0px;
 }
 

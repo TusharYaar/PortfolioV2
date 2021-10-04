@@ -1,0 +1,42 @@
+/* @font-face {
+  font-family: "Neuzeit Grotesk";
+  src: url("../assests/fonts/neuzeit/NeuzeitGroExt-Bla.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+} */
+
+/* @font-face {
+  font-family: "Neuzeit Grotesk";
+  src: url("../assests/fonts/neuzeit/NeuzeitGro-Bla.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Neuzeit Grotesk";
+
+  src: url("../assests/fonts/neuzeit/NeuzeitGro-Reg.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Neuzeit Grotesk";
+  src: url("../assests/fonts/neuzeit/NeuzeitGro-Lig.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Neuzeit Grotesk";
+  src: url("../assests/fonts/neuzeit/NeuzeitGro-Bol.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Neuzeit Grotesk";
+  src: url("../assests/fonts/neuzeit/NeuzeitGroCon-Bla.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+} */

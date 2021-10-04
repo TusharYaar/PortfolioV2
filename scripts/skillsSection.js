@@ -55,7 +55,7 @@ const skillsSectionObserver = new IntersectionObserver(
       skills_section_timeline.play();
     }
   },
-  { threshold: [1] }
+  { threshold: [0.4] }
 );
 
-skillsSectionObserver.observe(document.getElementById("skill_text_heading"));
+skillsSectionObserver.observe(document.getElementById("all_skills"));

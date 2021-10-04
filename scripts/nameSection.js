@@ -6,7 +6,6 @@ initial_timeline.add({
   easing: "easeOutExpo",
   duration: 1400,
   delay: (el, i) => 500 + 30 * i,
-
   complete: addNoteListener,
 });
 
@@ -30,5 +29,3 @@ initial_timeline.add({
     });
   },
 });
-
-console.log(document.body.clientWidth);

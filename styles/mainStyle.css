@@ -1,15 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+html {
+  scrollbar-width: thin;
+}
+
 body {
   background: url("../assests/background.png");
   background-size: contain;
   background-repeat: repeat;
   background-color: #1d1d1d;
-  font-family: "Roboto", sans-serif;
+  font-family: "Neuzeit Grotesk", sans-serif;
   overflow: hidden;
-  scrollbar-width: thin;
 }
-
+::-webkit-scrollbar {
+  width: 10px;
+}
 .site_section {
   width: 100%;
   display: flex;
@@ -28,12 +33,12 @@ body {
 
 #name_text {
   font-size: 70px;
-  font-family: "Noto Serif", serif;
   color: #0077b6;
   /* letter-spacing: -4px; */
 }
 
 .name_section_letter {
+  font-family: "Noto Serif", serif;
   display: inline-block;
   transition-duration: 0.1s;
 }
