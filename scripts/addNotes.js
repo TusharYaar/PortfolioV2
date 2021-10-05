@@ -1,19 +1,18 @@
 const addNoteListener = () => {
-  document
-    .querySelectorAll(".name_section_letter")
-    .forEach((element, index) => {
-      element.addEventListener("mouseenter", () => {
-        if (play_audio) {
-          all_howls[index].play();
+  document.querySelectorAll(".name_section_letter").forEach((element) => {
+    element.addEventListener("mouseenter", () => {
+      if (play_audio) {
+        let note = element.id.split("_")[1];
+        all_howls[note].play();
+        appendNoteAnimation();
+        appendNoteAnimation();
+        if (randomInt(0, 2) == 1) {
           appendNoteAnimation();
-          appendNoteAnimation();
-          if (randomInt(0, 2) == 1) {
-            appendNoteAnimation();
-          }
         }
-      });
-      element.classList.add("transition", "play_audio");
+      }
     });
+    element.classList.add("transition", "play_audio");
+  });
   const appendNoteAnimation = () => {
     var icon = document.createElement("i");
     icon.classList.add("feather-music");
