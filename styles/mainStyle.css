@@ -89,7 +89,7 @@ body {
   width: 0px;
   background-color: #141414;
   height: 100vh;
-  z-index: 400;
+  z-index: 100;
 }
 
 #social_icon_container {
@@ -121,4 +121,56 @@ body {
   font-size: 30px;
   color: #0077b6;
   cursor: pointer;
+}
+
+#play_music {
+  padding: 10px 0px 10px 0px;
+  font-size: 30px;
+  color: #0077b6;
+  cursor: pointer;
+}
+#play_music:hover {
+  color: #fff;
+}
+
+#takeover_container {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  max-width: 100%;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  display: none;
+
+  background-color: #1d1d1d;
+  /* background: url(../assests/background.png); */
+}
+#takeover_text {
+  font-size: 60px;
+  color: #fff;
+}
+
+#takeover_countdown_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.takeover_countdown {
+  font-size: 48px;
+  margin: 20px;
+  color: #fff;
+}
+
+#music_wave {
+  position: absolute;
+  bottom: 0px;
+  display: none;
+  width: 100%;
+  opacity: 0.6;
+  left: 0px;
 }
