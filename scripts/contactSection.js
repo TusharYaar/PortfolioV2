@@ -7,17 +7,14 @@ document.getElementById("send_form").addEventListener("click", async (e) => {
     return alert("Empty field/s");
   if (!email.match(EMAIL_REGEX)) return alert("Invalid email");
   try {
-    const response = await fetch(
-      "https://formsubmit.io/send/82dca637-f762-4592-88cb-5b17f5fcce4d",
-      {
-        method: "POST",
-        data: {
-          name,
-          email,
-          job,
-        },
-      }
-    );
+    let myForm = document.getElementById("contact_section_body");
+    let formData = new FormData(myForm);
+    console.log(formData);
+    const response = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    });
     console.log(response);
   } catch (e) {
     console.log(e);

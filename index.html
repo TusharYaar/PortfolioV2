@@ -250,19 +250,37 @@
               started.
             </h2>
           </div>
-          <div id="contact_section_body">
+          <form
+            id="contact_section_body"
+            name="portfolio_form"
+            data-netlify="true"
+          >
             My name is
-            <input id="name" type="text" placeholder="YOUR FULL NAME" /> and i
-            have a
-            <input id="job" type="text" placeholder="WEBSITE, JOB, ETC." /> that
-            could use your help. You can reach me at
-            <input id="email" type="email" placeholder="YOUR EMAIL ADDRESS" />
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="YOUR FULL NAME"
+            />
+            and i have a
+            <input
+              id="job"
+              type="text"
+              name="job"
+              placeholder="WEBSITE, JOB, ETC."
+            />
+            that could use your help. You can reach me at
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="YOUR EMAIL ADDRESS"
+            />
             to get things started.
-            <input type="text" name="_honey" style="display: none" />
-            <button id="send_form">
+            <button id="send_form" type="submit">
               Send Form <i class="feather-chevron-right"></i>
             </button>
-          </div>
+          </form>
         </div>
       </section>
     </main>
