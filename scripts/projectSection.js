@@ -1,7 +1,7 @@
 var current_scroll_position = 0;
-const available_scroll_width = document.getElementById(
-  "all_projects_container"
-).scrollWidth;
+const available_scroll_width =
+  document.getElementById("all_projects_container").scrollWidth -
+  window.innerWidth / 1.5;
 document.querySelectorAll(".project_container").forEach((element) => {
   element.addEventListener("click", function () {
     anime({
@@ -38,14 +38,16 @@ document
   .addEventListener("click", () => {
     current_scroll_position += window.innerWidth / 1.5;
     current_scroll_position =
-      current_scroll_position >=
-      available_scroll_width - window.innerWidth / 1.5
-        ? available_scroll_width - window.innerWidth / 1.5
+      current_scroll_position >= available_scroll_width
+        ? available_scroll_width
         : current_scroll_position;
     document.getElementById("all_projects_container").scroll({
       left: current_scroll_position,
       behavior: "smooth",
     });
+    document.getElementById("navigation_progress").style.width = `${
+      (current_scroll_position * 100) / available_scroll_width
+    }%`;
   });
 document
   .getElementById("project_navigation_left")
@@ -57,6 +59,9 @@ document
       left: current_scroll_position,
       behavior: "smooth",
     });
+    document.getElementById("navigation_progress").style.width = `${
+      (current_scroll_position * 100) / available_scroll_width
+    }%`;
   });
 function closeProjectPreview() {
   anime({

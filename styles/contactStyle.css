@@ -90,9 +90,6 @@
   color: transparent;
 }
 @media (min-width: 450px) {
-  #skills_section {
-    padding: 60px;
-  }
   #contact_section_heading > h2 {
     font-size: 48px;
   }
