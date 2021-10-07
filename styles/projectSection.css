@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #0077b6;
+  background-color: var(--blue);
   align-items: center;
 }
 @media (min-width: 510px) {
@@ -24,8 +24,8 @@
   overflow-x: auto;
   justify-content: center;
   scrollbar-width: thin;
-  background-color: #0077b6;
-  scrollbar-color: #0077b6#0077b6;
+  background-color: var(--blue);
+  scrollbar-color: var(--blue) var(--blue);
 }
 
 @media (min-width: 450px) {
@@ -43,7 +43,7 @@
   height: 132px;
   background-image: url(../assests/project_images/1.png);
   background-size: contain;
-  background-color: #efefef;
+  background-color: var(--white);
   margin: 10px;
   flex-shrink: 0;
   transition: height 0.5s, width 0.5s;
@@ -140,7 +140,7 @@
 .project_container:hover > .project {
   background-color: rgba(0, 0, 0, 0.425);
   opacity: 1;
-  color: #efefef;
+  color: var(--white);
 }
 
 #navigation_container {
@@ -164,9 +164,9 @@
   transition: all 0.2s;
 }
 .project_navigation:hover {
-  background-color: #000;
+  background-color: var(--black);
   opacity: 0.5;
-  color: #efefef;
+  color: var(--white);
 }
 @media (min-width: 450px) {
   #navigation_container {
@@ -192,7 +192,7 @@
   width: 0%;
   height: 2px;
   border-radius: 2px;
-  background-color: #000;
+  background-color: var(--black);
   transition: width 0.2s;
 }
 
@@ -227,12 +227,12 @@
 #close_preview_btn {
   font-size: 30px;
   padding: 10px;
-  color: #0077b6;
+  color: var(--blue);
   cursor: pointer;
   transition: all 0.3s;
 }
 #close_preview_btn:hover {
-  color: white;
+  color: var(--white);
   transform: rotate(180deg);
 }
 #project_preview {

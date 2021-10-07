@@ -9,8 +9,7 @@
   align-items: center;
   justify-content: center;
   z-index: 200;
-  background-color: #1d1d1d;
-  /* background: url(../assests/background.png); */
+  background-color: var(--light-black);
 }
 #hello_svg {
   width: 100%;

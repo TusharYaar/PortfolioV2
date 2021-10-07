@@ -3,3 +3,12 @@
   padding: 0px;
   box-sizing: border-box;
 }
+:root {
+  --white: #efefef;
+  --blue: #0077b6;
+  --black: #000000;
+  --light-black: #1d1d1d;
+  --yellow: #faa307;
+  --pink: #e63946;
+  --gray: #898989;
+}
