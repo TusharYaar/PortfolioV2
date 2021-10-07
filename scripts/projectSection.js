@@ -36,7 +36,8 @@ document.addEventListener("keydown", (event) => {
 document
   .getElementById("project_navigation_right")
   .addEventListener("click", () => {
-    current_scroll_position += window.innerWidth / 1.5;
+    current_scroll_position +=
+      document.querySelector(".project_container").clientWidth;
     current_scroll_position =
       current_scroll_position >= available_scroll_width
         ? available_scroll_width
@@ -52,7 +53,8 @@ document
 document
   .getElementById("project_navigation_left")
   .addEventListener("click", () => {
-    current_scroll_position -= window.innerWidth / 1.5;
+    current_scroll_position -=
+      document.querySelector(".project_container").clientWidth;
     current_scroll_position =
       current_scroll_position <= 0 ? 0 : current_scroll_position;
     document.getElementById("all_projects_container").scroll({
