@@ -28,7 +28,7 @@ const seq = [
   { note: "D", delay: 400 },
   { note: "C", delay: 400 },
 ];
-
+var currently_playing = false;
 let music_wave = anime({
   targets: "#music_wave> path",
   d: musicWave,
@@ -38,7 +38,22 @@ let music_wave = anime({
   autoplay: false,
   direction: "alternate",
 });
-let music_timeline = anime.timeline({ autoplay: false });
+let music_timeline = anime.timeline({
+  autoplay: false,
+  complete: () => {
+    anime({
+      targets: "#play_music",
+      rotate: currently_playing ? 0 : 360,
+      duration: 300,
+      update: (anim) => {
+        if (anim.progress > 70) {
+          changePlayingIcon();
+          endMusic();
+        }
+      },
+    });
+  },
+});
 let takeover_timeline = anime.timeline({
   autoplay: false,
   complete: () => {
@@ -93,7 +108,17 @@ takeover_timeline.add({
   },
 });
 
-document.getElementById("play_music").addEventListener("click", playMusic);
+document.getElementById("play_music").addEventListener("click", () => {
+  currently_playing ? endMusic() : playMusic();
+  anime({
+    targets: "#play_music",
+    rotate: currently_playing ? 0 : 360,
+    duration: 300,
+    update: (anim) => {
+      if (anim.progress > 70) changePlayingIcon();
+    },
+  });
+});
 
 seq.forEach(({ note, delay }) => {
   music_timeline.add(
@@ -117,6 +142,7 @@ seq.forEach(({ note, delay }) => {
 });
 
 function playMusic() {
+  currently_playing = true;
   window.scroll({
     top: 0,
     behavior: "smooth",
@@ -125,6 +151,7 @@ function playMusic() {
 }
 
 function endMusic() {
+  currently_playing = false;
   music_timeline.pause();
   music_timeline.seek(0);
   takeover_timeline.seek(0);
@@ -142,4 +169,16 @@ function endMusic() {
       document.getElementById("body").style.overflow = "auto";
     },
   });
+}
+
+function changePlayingIcon() {
+  if (currently_playing) {
+    document.getElementById(
+      "play_music"
+    ).innerHTML = ` <i class="feather-stop-circle"></i>`;
+  } else {
+    document.getElementById(
+      "play_music"
+    ).innerHTML = ` <i class="feather-play-circle"></i>`;
+  }
 }

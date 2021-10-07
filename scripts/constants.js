@@ -1,7 +1,6 @@
 document.body.scrollTop = 0; // For Safari
 document.documentElement.scrollTop = 0;
 
-var play_audio = true;
 var initial_timeline = anime.timeline();
 var about_section_timeline = anime.timeline({ autoplay: false });
 var about_section_timeline_play = false;

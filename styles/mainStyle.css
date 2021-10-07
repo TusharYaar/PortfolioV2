@@ -38,11 +38,8 @@ body {
   display: inline-block;
   transition-duration: 0.2s;
 }
-.name_section_letter.transition:hover {
-  color: var(--pink);
-}
 
-.name_section_letter.transition.play_audio:hover {
+.name_section_letter.transition:hover {
   transform: translateY(-20px) !important;
   color: var(--white);
 }
@@ -110,13 +107,6 @@ body {
   position: fixed;
   left: 0px;
   bottom: 0px;
-}
-
-#play_pause_notes {
-  padding: 10px 0px 10px 0px;
-  font-size: 30px;
-  color: var(--blue);
-  cursor: pointer;
 }
 
 #play_music {

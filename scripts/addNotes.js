@@ -1,7 +1,7 @@
 const addNoteListener = () => {
   document.querySelectorAll(".name_section_letter").forEach((element) => {
     element.addEventListener("mouseenter", () => {
-      if (play_audio) {
+      if (!currently_playing) {
         let note = element.id.split("_")[1];
         all_howls[note].play();
         appendNoteAnimation();
@@ -14,12 +14,12 @@ const addNoteListener = () => {
     element.classList.add("transition", "play_audio");
   });
   const appendNoteAnimation = () => {
-    var icon = document.createElement("i");
-    icon.classList.add("feather-music");
-    icon.style.color = randomColor();
-    document.body.appendChild(icon);
+    var musicNote = document.createElement("i");
+    musicNote.classList.add("feather-music");
+    musicNote.style.color = randomColor();
+    document.body.appendChild(musicNote);
     anime({
-      targets: icon,
+      targets: musicNote,
       scale: {
         value: [0, randomFloat(0.8, 4)],
         duration: 300,
@@ -34,30 +34,8 @@ const addNoteListener = () => {
       easing: "linear",
       duration: randomInt(3000, 6000),
       complete: function (anim) {
-        icon.remove();
+        musicNote.remove();
       },
     });
   };
-
-  document.getElementById("play_pause_notes").addEventListener("click", (e) => {
-    play_audio = !play_audio;
-    document.querySelectorAll(".name_section_letter").forEach((element) => {
-      play_audio
-        ? element.classList.add("play_audio")
-        : element.classList.remove("play_audio");
-    });
-    anime({
-      targets: document.getElementById("play_pause_notes"),
-      rotate: play_audio ? [0, 720] : [720, 0],
-      duration: 500,
-      easing: "easeInOutQuad",
-      update: function (anim) {
-        if (anim.progress > 70) {
-          document.getElementById("play_pause_notes").innerHTML = `<i class=" ${
-            play_audio ? "feather-stop-circle" : "feather-play-circle"
-          }"></i>`;
-        }
-      },
-    });
-  });
 };
