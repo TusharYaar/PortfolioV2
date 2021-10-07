@@ -1,25 +1,28 @@
 var current_scroll_position = 0;
-const available_scroll_width =
-  document.getElementById("all_projects_container").scrollWidth -
+let available_scroll_width;
+document.getElementById("all_projects_container").scrollWidth -
   window.innerWidth / 1.5;
-document.querySelectorAll(".project_container").forEach((element) => {
-  element.addEventListener("click", function () {
-    anime({
-      targets: ["#project_preview_container", "#project_preview_background"],
-      translateY: [-100, 0],
-      opacity: [0, 1],
-      easing: "easeInOutQuad",
-      duration: 300,
-      begin: function (anim) {
-        document.getElementById("project_preview_container").style.display =
-          "flex";
-        document.getElementById("project_preview_background").style.display =
-          "block";
-      },
+
+function addProjectClickListener() {
+  document.querySelectorAll(".project_container").forEach((element) => {
+    element.addEventListener("click", function () {
+      anime({
+        targets: ["#project_preview_container", "#project_preview_background"],
+        translateY: [-100, 0],
+        opacity: [0, 1],
+        easing: "easeInOutQuad",
+        duration: 300,
+        begin: function () {
+          document.getElementById("project_preview_container").style.display =
+            "flex";
+          document.getElementById("project_preview_background").style.display =
+            "block";
+          fillProjectPreview(parseInt(element.dataset.id));
+        },
+      });
     });
   });
-});
-
+}
 document
   .getElementById("project_preview_background")
   .addEventListener("click", closeProjectPreview);
@@ -79,4 +82,27 @@ function closeProjectPreview() {
         "none";
     },
   });
+}
+
+function appendProjects() {
+  let all_project_container = document.getElementById("all_projects_container");
+  projects.forEach((project, index) => {
+    let element = project.getProjectThumbnail();
+    element.dataset.id = index;
+    all_project_container.appendChild(element);
+  });
+  available_scroll_width =
+    document.getElementById("all_projects_container").scrollWidth -
+    window.innerWidth / 1.5;
+  addProjectClickListener();
+}
+
+function fillProjectPreview(index) {
+  let project = projects[index];
+  console.log(project);
+  // document.getElementById("project_preview_title").innerHTML = project.title;
+  // document.getElementById("project_preview_description").innerHTML =
+  //   project.description;
+  // document.getElementById("project_preview_image").src = project.image;
+  // document.getElementById("project_preview_link").href = project.link;
 }

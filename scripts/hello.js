@@ -17,5 +17,6 @@ initial_timeline.add({
   complete: function (anim) {
     document.getElementById("hello_container").remove();
     document.getElementById("body").style.overflow = "auto";
+    appendProjects();
   },
 });
