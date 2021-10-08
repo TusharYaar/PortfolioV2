@@ -100,9 +100,17 @@ function appendProjects() {
 function fillProjectPreview(index) {
   let project = projects[index];
   console.log(project);
-  // document.getElementById("project_preview_title").innerHTML = project.title;
-  // document.getElementById("project_preview_description").innerHTML =
-  //   project.description;
+  document.getElementById("project_title_value").innerHTML = project.title;
+  document.getElementById("project_type_value").innerHTML = project.type;
+  document.getElementById("project_completed_in_value").innerHTML =
+    project.completed_in;
+  document.getElementById("project_completed_on_value").innerHTML =
+    project.completed_on;
+  document.getElementById("project_coffee_value").innerHTML =
+    project.coffee_required;
+
+  document.getElementById("project_description").innerHTML =
+    project.description;
   // document.getElementById("project_preview_image").src = project.image;
   // document.getElementById("project_preview_link").href = project.link;
 }

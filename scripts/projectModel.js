@@ -3,7 +3,9 @@ class Project {
     title,
     type,
     completed_in,
+    completed_on,
     coffee_required,
+    team_size,
     description,
     number_of_images,
     web_link,
@@ -13,6 +15,7 @@ class Project {
     this.title = title;
     this.type = type;
     this.completed_in = completed_in;
+    this.completed_on = completed_on;
     this.coffee_required = coffee_required;
     this.description = description;
     this.number_of_images = number_of_images;
