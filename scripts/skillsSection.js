@@ -51,7 +51,6 @@ const skillsSectionObserver = new IntersectionObserver(
   function (entries) {
     if (entries[0].isIntersecting === true && !skills_section_timeline_play) {
       skills_section_timeline_play = true;
-      console.log("Playing");
       skills_section_timeline.play();
     }
   },

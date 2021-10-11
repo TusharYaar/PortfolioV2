@@ -84,6 +84,12 @@ body {
   height: 100vh;
   z-index: 100;
 }
+#active_section {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 30px;
+  color: var(--blue);
+}
 
 #social_icon_container {
   display: flex;
