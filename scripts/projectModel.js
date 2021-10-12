@@ -1,6 +1,7 @@
 class Project {
   constructor(
     title,
+    folder,
     type,
     completed_in,
     completed_on,
@@ -13,6 +14,7 @@ class Project {
     github_link
   ) {
     this.title = title;
+    this.folder = folder;
     this.type = type;
     this.completed_in = completed_in;
     this.completed_on = completed_on;
@@ -22,11 +24,13 @@ class Project {
     this.web_link = web_link;
     this.playstore_link = playstore_link;
     this.github_link = github_link;
+    this.primary_image = `./assests/project_images/${folder}/0.png`;
   }
 
   getProjectThumbnail() {
     let container = document.createElement("div");
     container.className = "project_container";
+    container.style.backgroundImage = `url(${this.primary_image})`;
     let project = document.createElement("div");
     project.className = "project";
     let project_title = document.createElement("h3");

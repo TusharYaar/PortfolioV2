@@ -2,6 +2,14 @@ var current_scroll_position = 0;
 let available_scroll_width;
 let preview_timeline = anime.timeline({ autoplay: false });
 preview_timeline.add({
+  targets: "#project_preview_image",
+  translateX: [-100, 0],
+  opacity: [0, 1],
+  easing: "easeInOutQuad",
+  duration: 300,
+  offset: 0,
+});
+preview_timeline.add({
   targets: ".project_details_row",
   translateX: [-40, 0],
   opacity: [0, 1],
@@ -196,6 +204,5 @@ function fillProjectPreview(index) {
   document.getElementById("project_description").innerText =
     project.description;
 
-  // document.getElementById("project_preview_image").src = project.image;
-  // document.getElementById("project_preview_link").href = project.link;
+  document.getElementById("project_preview_image").src = project.primary_image;
 }
