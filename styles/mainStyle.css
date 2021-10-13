@@ -116,7 +116,7 @@ body {
 }
 
 #play_music {
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 40px 0px;
   font-size: 30px;
   color: var(--blue);
   cursor: pointer;

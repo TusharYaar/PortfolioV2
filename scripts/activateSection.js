@@ -16,7 +16,6 @@ function getOffsets() {
     obj.offsetBottom = section.offsetHeight + section.offsetTop;
     offsets.push(obj);
   });
-  console.log(offsets);
 }
 
 document.addEventListener("scroll", function (e) {

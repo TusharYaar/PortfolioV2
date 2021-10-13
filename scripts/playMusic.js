@@ -1,8 +1,74 @@
 const seq = [
-  { note: "Ds", delay: 0 },
+  { note: "Gs", delay: 0 },
+  { note: "As", delay: 100 },
+  { note: "B", delay: 100 },
+
+  { note: "Gs", delay: 600 },
+  { note: "B", delay: 100 },
+  { note: "As", delay: 100 },
+  { note: "Gs", delay: 100 },
+  { note: "B", delay: 100 },
+  { note: "As", delay: 100 },
   { note: "Fs", delay: 400 },
-  { note: "Ds", delay: 400 },
-  { note: "Ds", delay: 200 },
+
+  { note: "Cs", delay: 600 },
+  { note: "B", delay: 300 },
+  { note: "As", delay: 100 },
+  { note: "Gs", delay: 100 },
+  { note: "As", delay: 100 },
+  { note: "B", delay: 100 },
+
+  { note: "Cs", delay: 600 },
+  { note: "B", delay: 300 },
+  { note: "As", delay: 100 },
+  { note: "Gs", delay: 100 },
+  { note: "As", delay: 100 },
+  { note: "B", delay: 100 },
+  { note: "As", delay: 400 },
+
+  { note: "Gs", delay: 600 },
+  { note: "As", delay: 100 },
+  { note: "B", delay: 100 },
+  { note: "B", delay: 300 },
+  { note: "B", delay: 300 },
+
+  { note: "Gs", delay: 500 },
+  { note: "B", delay: 100 },
+  { note: "As", delay: 100 },
+  { note: "Gs", delay: 100 },
+  { note: "B", delay: 100 },
+  { note: "As", delay: 100 },
+  { note: "Fs", delay: 400 },
+
+  { note: "Cs", delay: 600 },
+  { note: "B", delay: 300 },
+  { note: "As", delay: 100 },
+  { note: "Gs", delay: 100 },
+  { note: "As", delay: 100 },
+  { note: "B", delay: 100 },
+
+  { note: "Cs", delay: 600 },
+  { note: "B", delay: 300 },
+  { note: "As", delay: 100 },
+  { note: "Gs", delay: 100 },
+  { note: "As", delay: 100 },
+  { note: "B", delay: 100 },
+  { note: "As", delay: 400 },
+
+  { note: "Gs", delay: 700 },
+  { note: "As", delay: 100 },
+  { note: "B", delay: 100 },
+  { note: "B", delay: 200 },
+  { note: "Gs", delay: 300 },
+  { note: "As", delay: 100 },
+  { note: "As", delay: 50 },
+
+  { note: "Fs", delay: 200 },
+  { note: "Gs", delay: 100 },
+  { note: "Gs", delay: 100 },
+  { note: "Gs", delay: 50 },
+
+  // { note: "Fs", delay: 100 },
 ];
 var currently_playing = false;
 let music_wave = anime({
@@ -34,7 +100,7 @@ let takeover_timeline = anime.timeline({
   autoplay: false,
   complete: () => {
     music_timeline.play();
-    music_wave.play();
+    // music_wave.play();
   },
 });
 
@@ -49,8 +115,8 @@ takeover_timeline.add({
   },
   complete: () => {
     document.getElementById("body").style.overflow = "hidden";
-    document.getElementById("music_wave").style.display = "block";
-    document.getElementById("music_wave").style.opacity = 1;
+    // document.getElementById("music_wave").style.display = "block";
+    // document.getElementById("music_wave").style.opacity = 1;
   },
 });
 takeover_timeline.add({
@@ -138,7 +204,7 @@ function endMusic() {
     easing: "easeInOutQuad",
     duration: 500,
     complete: () => {
-      document.getElementById("music_wave").removeAttribute("style");
+      // document.getElementById("music_wave").removeAttribute("style");
       document.querySelectorAll(".name_section_letter").forEach((el) => {
         el.removeAttribute("style");
       });

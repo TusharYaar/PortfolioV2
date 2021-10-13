@@ -23,10 +23,10 @@ all_howls = {
     src: ["./assests/sounds/B5.mp3"],
   }),
   Cs: new Howl({
-    src: ["./assests/sounds/Cb5.mp3"],
+    src: ["./assests/sounds/Db6.mp3"],
   }),
   Ds: new Howl({
-    src: ["./assests/sounds/Eb5.mp3"],
+    src: ["./assests/sounds/Eb6.mp3"],
   }),
   E8: new Howl({
     src: ["./assests/sounds/E6.mp3"],
