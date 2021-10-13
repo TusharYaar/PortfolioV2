@@ -7,29 +7,29 @@ var about_section_timeline_play = false;
 var skills_section_timeline = anime.timeline({ autoplay: false });
 var skills_section_timeline_play = false;
 all_howls = {
-  C: new Howl({
-    src: ["./assests/sounds/C5.mp3"],
-  }),
-  D: new Howl({
-    src: ["./assests/sounds/D5.mp3"],
-  }),
   E: new Howl({
     src: ["./assests/sounds/E5.mp3"],
   }),
-  F: new Howl({
-    src: ["./assests/sounds/F5.mp3"],
+  Fs: new Howl({
+    src: ["./assests/sounds/Gb5.mp3"],
   }),
-  G: new Howl({
-    src: ["./assests/sounds/G5.mp3"],
+  Gs: new Howl({
+    src: ["./assests/sounds/Ab5.mp3"],
   }),
-  A: new Howl({
-    src: ["./assests/sounds/A5.mp3"],
+  As: new Howl({
+    src: ["./assests/sounds/Bb5.mp3"],
   }),
   B: new Howl({
     src: ["./assests/sounds/B5.mp3"],
   }),
-  C8: new Howl({
-    src: ["./assests/sounds/C6.mp3"],
+  Cs: new Howl({
+    src: ["./assests/sounds/Cb5.mp3"],
+  }),
+  Ds: new Howl({
+    src: ["./assests/sounds/Eb5.mp3"],
+  }),
+  E8: new Howl({
+    src: ["./assests/sounds/E6.mp3"],
   }),
 };
 

@@ -1,32 +1,8 @@
 const seq = [
-  { note: "D", delay: 0 },
-  { note: "F", delay: 400 },
-  { note: "D", delay: 400 },
-  { note: "D", delay: 200 },
-
-  { note: "F", delay: 400 },
-  { note: "D", delay: 400 },
-  { note: "D", delay: 200 },
-
-  { note: "F", delay: 400 },
-  { note: "D", delay: 400 },
-  { note: "E", delay: 200 },
-  { note: "D", delay: 400 },
-  { note: "C", delay: 400 },
-  { note: "D", delay: 200 },
-  { note: "F", delay: 400 },
-  { note: "D", delay: 400 },
-  { note: "D", delay: 200 },
-
-  { note: "F", delay: 400 },
-  { note: "D", delay: 400 },
-  { note: "D", delay: 200 },
-
-  { note: "F", delay: 400 },
-  { note: "D", delay: 400 },
-  { note: "E", delay: 200 },
-  { note: "D", delay: 400 },
-  { note: "C", delay: 400 },
+  { note: "Ds", delay: 0 },
+  { note: "Fs", delay: 400 },
+  { note: "Ds", delay: 400 },
+  { note: "Ds", delay: 200 },
 ];
 var currently_playing = false;
 let music_wave = anime({
