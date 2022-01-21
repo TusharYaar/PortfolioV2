@@ -42,13 +42,12 @@
 .project_container {
   width: 250px;
   height: 132px;
-  background-image: url(../assests/project_images/1.png);
   background-size: contain;
   background-color: var(--white);
   margin: 10px;
   flex-shrink: 0;
   transition: height 0.5s, width 0.5s;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 @media (min-width: 400px) {

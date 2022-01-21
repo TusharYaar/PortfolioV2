@@ -2,6 +2,7 @@
 // type,
 // completed_in,
 // coffee_required,
+// team_size,
 // description,
 // number_of_images,
 // web_link,
@@ -50,5 +51,19 @@ const projects = [
     "https://arga.tusharyaar.me/",
     "",
     "https://github.com/TusharYaar/tasker"
+  ),
+  new Project(
+    "Open CSS Loader",
+    "open_css_loader",
+    "Full Stack Application",
+    "4 weeks",
+    "DECEMBER 2020",
+    43,
+    1,
+    "Open CSS Loader, my first full stack application aim to provide a patform to upcomming developers to get css loaders. The site provides a ide to add loaders and edit already existing loaders and see the preview instantly. ",
+    6,
+    "https://opencssloader.tusharyaar.me/",
+    "",
+    ""
   ),
 ];
