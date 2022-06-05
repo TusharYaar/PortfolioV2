@@ -6,6 +6,9 @@ initial_timeline.add({
   duration: 3000, // chage back to 3000
   direction: "alternate",
   loop: 0,
+  begin: function () {
+    document.querySelector("#hello_svg").visiblity = "visible";
+  },
 });
 initial_timeline.add({
   targets: "#hello_container",

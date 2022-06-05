@@ -16,6 +16,7 @@
   height: 100%;
   max-width: 640px;
   max-height: 227px;
+  visibility: none;
 }
 #hello_svg path {
   stroke-dasharray: 2400;
